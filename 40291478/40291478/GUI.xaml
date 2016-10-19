@@ -22,8 +22,8 @@
         <RadioButton x:Name="rbpaid_no" Content="No" HorizontalAlignment="Left" Height="17" Margin="228,224,0,0" VerticalAlignment="Top" Width="63"/>
         <RadioButton x:Name="rbpres_yes" Content="Yes" HorizontalAlignment="Left" Height="17" Margin="125,266,0,0" VerticalAlignment="Top" Width="66"/>
         <RadioButton x:Name="rbpres_no" Content="No" HorizontalAlignment="Left" Height="17" Margin="228,266,0,0" VerticalAlignment="Top" Width="63"/>
-        <Button x:Name="btncert" Content="Certificate" HorizontalAlignment="Left" Height="49" Margin="491,435,0,0" VerticalAlignment="Top" Width="76"/>
-        <Button x:Name="btninvoice" Content="Invoice" HorizontalAlignment="Left" Height="49" Margin="378,435,0,0" VerticalAlignment="Top" Width="76"/>
+        <Button x:Name="btncert" Content="Certificate" HorizontalAlignment="Left" Height="49" Margin="491,435,0,0" VerticalAlignment="Top" Width="76" Click="btncert_Click"/>
+        <Button x:Name="btninvoice" Content="Invoice" HorizontalAlignment="Left" Height="49" Margin="378,435,0,0" VerticalAlignment="Top" Width="76" Click="btninvoice_Click"/>
         <Button x:Name="btnget" Content="Get" HorizontalAlignment="Left" Height="49" Margin="255,435,0,0" VerticalAlignment="Top" Width="76"/>
         <Button x:Name="btnclear" Content="Clear" HorizontalAlignment="Left" Height="49" Margin="138,435,0,0" VerticalAlignment="Top" Width="76" Click="btnclear_Click"/>
         <Button x:Name="btnset" Content="Set" HorizontalAlignment="Left" Height="49" Margin="10,435,0,0" VerticalAlignment="Top" Width="76"/>

@@ -25,7 +25,10 @@ namespace _40291478
             InitializeComponent();
         }
         //Ciaran McMahon
-        //18-10-2016
+        //40291478
+        //Coursework1
+        
+       
         private void btnclear_Click(object sender, RoutedEventArgs e)
         {
             //Clears all data the user has inputted 
@@ -35,11 +38,12 @@ namespace _40291478
             txtinsti_name.Text = string.Empty;
             txtcon_name.Text = string.Empty;
             cmbreg_type.Items.Clear();
-            rbpaid_yes.Checked= false;
+            rbpaid_yes.Checked = false;
             rbpaid_no.Checked = false;
             rbpres_yes.Checked = false;
             rbpres_no.Checked = false;
             txtpaper_title.Text = string.Empty;
         }
-    }
+
+    }     
 }
