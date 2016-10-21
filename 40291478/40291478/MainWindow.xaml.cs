@@ -26,8 +26,12 @@ namespace _40291478
         public MainWindow()
         {
             InitializeComponent();
+
+            //Adds items to the types of registration 
+            cmbreg.Items.Add("Full");
+            cmbreg.Items.Add("Student");
+            cmbreg.Items.Add("Organiser");
         }
-        
         private void btninvoice_Click(object sender, RoutedEventArgs e)
         {
             // Creates the Invoice window once the button is clicked
@@ -55,6 +59,7 @@ namespace _40291478
             rbpaid_no.IsChecked = false;
             rbpres_yes.IsChecked = false;
             rbpres_no.IsChecked = false;
+            txtpaper_title.Text = string.Empty;
            
         }
 
@@ -62,60 +67,36 @@ namespace _40291478
         {
             //Creates new attendee instance
             myAttendee = new Attendee();
-
-            myAttendee.AttendeeRef = txtattend_ref.Text;
+           
+            myAttendee.AttendeeRef = int.Parse(txtattend_ref.Text);
             myAttendee.FirstName = txtfirst_name.Text;
             myAttendee.SecondName = txtfirst_name.Text;
             myAttendee.Institution = txtinsti.Text;
             myAttendee.Confer_Name = txtcon_name.Text;
-            myAttendee.Registration = cmbreg.SelectedItem;
+            myAttendee.Registration = Convert.ToString(cmbreg.SelectedItem);
+            if (rbpaid_yes.IsChecked == true)
+                myAttendee.Paid = Convert.ToString(rbpaid_yes.Content);
+            else
+                if (rbpaid_no.IsChecked == true)
+                    myAttendee.Paid = Convert.ToString(rbpaid_no.Content);
+            if (rbpres_yes.IsChecked == true)
+                myAttendee.Pres = Convert.ToString(rbpaid_yes.Content);
+            else
+                if (rbpres_no.IsChecked == true)
+                    myAttendee.Pres = Convert.ToString(rbpres_no.Content);
+            myAttendee.PaperTitle = txtpaper_title.Text;
         }
-        
-       
-    }
-    class Attendee : MainWindow
-    {
-        private string attendeeref;
-        private string firstname;
-        private string secondname;
-        private string institution;
-        private string confer_name;
-        private string registration;
-        private bool paid;
-        private bool pres;
-        private string papertitle;
-       
-        
-        public string AttendeeRef
+
+        private void btnget_Click(object sender, RoutedEventArgs e)
         {
-            get{return attendeeref;}
-            set{attendeeref= value;}
-            
-        }
-        public string FirstName
-        {
-            get { return firstname; }
-            set { firstname = value; }
-        }
-        public string SecondName
-        {
-            get{return secondname; }
-            set { secondname = value; }
-        }
-        public string Institution
-        {
-            get { return institution; }
-            set { institution = value; }
-        }
-        public string Confer_Name
-        {
-            get { return confer_name; }
-            set { confer_name = value; }
-        }
-        public string Registration
-        {
-            get { return registration; }
-            set { registration = value; }
+            txtattend_ref.Text = Convert.ToString(myAttendee.AttendeeRef);
+            txtfirst_name.Text = myAttendee.FirstName;
+            txtsecond_name.Text = myAttendee.SecondName;
+            txtinsti.Text = myAttendee.Institution;
+            txtcon_name.Text = myAttendee.Confer_Name;
+            cmbreg.SelectedItem = myAttendee.Institution;
+
         }
     }
+    
 }

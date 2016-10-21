@@ -69,6 +69,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Attendee.cs" />
     <Compile Include="Certificate.xaml.cs">
       <DependentUpon>Certificate.xaml</DependentUpon>
     </Compile>

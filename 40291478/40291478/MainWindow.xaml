@@ -17,16 +17,16 @@
         <TextBox x:Name="txtinsti" HorizontalAlignment="Left" Height="41" Margin="157,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
         <TextBox x:Name="txtsecond_name" HorizontalAlignment="Left" Height="41" Margin="317,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
         <TextBox x:Name="txtfirst_name" HorizontalAlignment="Left" Height="41" Margin="157,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
-        <ComboBox x:Name="cmbreg" HorizontalAlignment="Left" Height="41" Margin="157,194,0,0" VerticalAlignment="Top" Width="155" SelectionChanged="cmbreg_SelectionChanged"/>
-        <RadioButton x:Name="rbpaid_yes" Content="Yes" HorizontalAlignment="Left" Height="26" Margin="157,246,0,0" VerticalAlignment="Top" Width="71"/>
-        <RadioButton x:Name="rbpaid_no" Content="No" HorizontalAlignment="Left" Height="26" Margin="249,246,0,0" VerticalAlignment="Top" Width="63"/>
-        <RadioButton x:Name="rbpres_yes" Content="Yes" HorizontalAlignment="Left" Height="24" Margin="157,292,0,0" VerticalAlignment="Top" Width="71" RenderTransformOrigin="0.547,1.37"/>
-        <RadioButton x:Name="rbpres_no" Content="No" HorizontalAlignment="Left" Height="24" Margin="249,292,0,0" VerticalAlignment="Top" Width="63"/>
+        <RadioButton x:Name="rbpaid_yes" Content="Yes" HorizontalAlignment="Left" Height="26" Margin="157,246,0,0" VerticalAlignment="Top" Width="71" GroupName="Paid"/>
+        <RadioButton x:Name="rbpaid_no" Content="No" HorizontalAlignment="Left" Height="26" Margin="249,246,0,0" VerticalAlignment="Top" Width="63" GroupName="Paid"/>
         <Button x:Name="btnset" Content="Set" HorizontalAlignment="Left" Height="52" Margin="10,417,0,0" VerticalAlignment="Top" Width="83" Click="btnset_Click"/>
         <Button x:Name="btncert" Content="Certificate" HorizontalAlignment="Left" Height="52" Margin="472,417,0,0" VerticalAlignment="Top" Width="83" Click="btncert_Click"/>
         <Button x:Name="btninvoice" Content="Invoice" HorizontalAlignment="Left" Height="52" Margin="365,417,0,0" VerticalAlignment="Top" Width="83" Click="btninvoice_Click"/>
-        <Button x:Name="btnget" Content="Get" HorizontalAlignment="Left" Height="52" Margin="249,417,0,0" VerticalAlignment="Top" Width="83"/>
+        <Button x:Name="btnget" Content="Get" HorizontalAlignment="Left" Height="52" Margin="249,417,0,0" VerticalAlignment="Top" Width="83" Click="btnget_Click"/>
         <Button x:Name="btnclear" Content="Clear" HorizontalAlignment="Left" Height="52" Margin="126,417,0,0" VerticalAlignment="Top" Width="83" Click="btnclear_Click"/>
+        <ComboBox x:Name="cmbreg" HorizontalAlignment="Left" Height="41" Margin="157,194,0,0" VerticalAlignment="Top" Width="155"/>
+        <RadioButton x:Name="rbpres_yes" Content="Yes" HorizontalAlignment="Left" Height="21" Margin="157,292,0,0" VerticalAlignment="Top" Width="52" GroupName="Pres"/>
+        <RadioButton x:Name="rbpres_no" Content="No" HorizontalAlignment="Left" Height="21" Margin="249,292,0,0" VerticalAlignment="Top" Width="63" GroupName="Pres"/>
 
     </Grid>
 </Window>
