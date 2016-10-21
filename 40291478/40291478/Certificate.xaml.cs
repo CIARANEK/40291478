@@ -18,10 +18,18 @@ namespace _40291478
     /// Interaction logic for Certificate.xaml
     /// </summary>
     public partial class Certificate : Window
+        
     {
         public Certificate()
         {
             InitializeComponent();
         }
+        
+        private void btnclose_Click(object sender, RoutedEventArgs e)
+        {
+            // Closes the certificate window
+            this.Close();
+        }
+        }
     }
-}
+

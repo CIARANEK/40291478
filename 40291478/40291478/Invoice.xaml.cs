@@ -23,5 +23,11 @@ namespace _40291478
         {
             InitializeComponent();
         }
+
+        private void btnclose_Click(object sender, RoutedEventArgs e)
+        {
+            //Closes the Invoice window
+            this.Close();
+        }
     }
 }

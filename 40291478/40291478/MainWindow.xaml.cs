@@ -94,7 +94,10 @@ namespace _40291478
             txtsecond_name.Text = myAttendee.SecondName;
             txtinsti.Text = myAttendee.Institution;
             txtcon_name.Text = myAttendee.Confer_Name;
-            cmbreg.SelectedItem = myAttendee.Institution;
+            //cmbreg.SelectedItem = myAttendee.Institution;
+
+
+            txtpaper_title.Text = myAttendee.PaperTitle;
 
         }
     }

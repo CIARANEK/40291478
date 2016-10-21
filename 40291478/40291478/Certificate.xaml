@@ -1,8 +1,10 @@
 ﻿<Window x:Class="_40291478.Certificate"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Certificate" Height="300" Width="300">
+        Title="Certificate" Height="424.088" Width="367.669">
     <Grid>
-        
+        <Label x:Name="lblcert" Content="" HorizontalAlignment="Left" Height="270" Margin="-1,-1,-0.4,0" VerticalAlignment="Top" Width="363"/>
+        <Button x:Name="btnclose" Content="Return to Main Window" HorizontalAlignment="Left" Height="40" Margin="10,344,0,0" VerticalAlignment="Top" Width="138" Click="btnclose_Click"/>
+
     </Grid>
 </Window>
