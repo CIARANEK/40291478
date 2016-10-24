@@ -67,10 +67,10 @@ namespace _40291478
         {
             //Creates new attendee instance
             myAttendee = new Attendee();
-           
+
             myAttendee.AttendeeRef = int.Parse(txtattend_ref.Text);
             myAttendee.FirstName = txtfirst_name.Text;
-            myAttendee.SecondName = txtfirst_name.Text;
+            myAttendee.SecondName = txtsecond_name.Text;
             myAttendee.Institution = txtinsti.Text;
             myAttendee.Confer_Name = txtcon_name.Text;
             myAttendee.Registration = Convert.ToString(cmbreg.SelectedItem);
@@ -80,10 +80,10 @@ namespace _40291478
                 if (rbpaid_no.IsChecked == true)
                     myAttendee.Paid = Convert.ToString(rbpaid_no.Content);
             if (rbpres_yes.IsChecked == true)
-                myAttendee.Pres = Convert.ToString(rbpaid_yes.Content);
+               myAttendee.Pres = Convert.ToString(rbpaid_yes.Content);
             else
                 if (rbpres_no.IsChecked == true)
-                    myAttendee.Pres = Convert.ToString(rbpres_no.Content);
+                   myAttendee.Pres = Convert.ToString(rbpres_no.Content);
             myAttendee.PaperTitle = txtpaper_title.Text;
         }
 
@@ -95,8 +95,8 @@ namespace _40291478
             txtinsti.Text = myAttendee.Institution;
             txtcon_name.Text = myAttendee.Confer_Name;
             //cmbreg.SelectedItem = myAttendee.Institution;
-
-
+            //
+            //
             txtpaper_title.Text = myAttendee.PaperTitle;
 
         }
