@@ -34,16 +34,17 @@ namespace _40291478
         }
         private void btninvoice_Click(object sender, RoutedEventArgs e)
         {
-            // Creates the Invoice window once the button is clicked
+            // Shows the Invoice window once the button is clicked
             Invoice newWin = new Invoice();
             newWin.Show();
         }
 
         private void btncert_Click(object sender, RoutedEventArgs e)
         {
-            //Creates the Certificate window once the button is clicked
+            //Shows the Certificate window once the button is clicked
             Certificate newWin = new Certificate();
             newWin.Show();
+            
         }
 
         private void btnclear_Click(object sender, RoutedEventArgs e)

@@ -23,6 +23,7 @@ namespace _40291478
         public Certificate()
         {
             InitializeComponent();
+            lblcert.Content = "hello"  ;
         }
         
         private void btnclose_Click(object sender, RoutedEventArgs e)

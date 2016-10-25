@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace _40291478
 {
-    class Attendee : MainWindow
+    
+    public class Attendee 
     {
         private int attendeeref;
         private string firstname;
@@ -17,7 +18,6 @@ namespace _40291478
         private string paid;
         private string pres;
         private string papertitle;
-
 
         public int AttendeeRef
         {
