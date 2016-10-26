@@ -4,7 +4,7 @@
         Title="Invoice" Height="333.835" Width="362.03">
     <Grid>
         <Label Content="Name" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="70"/>
-        <Label x:Name="lblname" Content="" HorizontalAlignment="Left" Height="30" Margin="114,0,0,0" VerticalAlignment="Top" Width="174"/>
+        <Label x:Name="lblname" Content="" HorizontalAlignment="Left" Height="30" Margin="114,0,0,0" VerticalAlignment="Top" Width="83"/>
         <Label Content="Institution" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="103" Margin="0,35,0,0"/>
         <Label x:Name="lblinsti" Content="" HorizontalAlignment="Left" Height="30" Margin="114,35,0,0" VerticalAlignment="Top" Width="174" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
@@ -21,5 +21,6 @@
         <Label Content="Price" HorizontalAlignment="Left" Height="30" Margin="0,105,0,0" VerticalAlignment="Top" Width="70"/>
         <Label x:Name="lblprice" Content="" HorizontalAlignment="Left" Height="30" Margin="114,106,0,0" VerticalAlignment="Top" Width="174" RenderTransformOrigin="0.425,-0.638"/>
         <Button x:Name="btnclose" Content="Return To The Main Window" HorizontalAlignment="Left" Height="50" Margin="10,244,0,0" VerticalAlignment="Top" Width="156" Click="btnclose_Click"/>
+        <Label x:Name="lblsecn" Content="" HorizontalAlignment="Left" Height="30" Margin="205,0,0,0" VerticalAlignment="Top" Width="83"/>
     </Grid>
 </Window>
